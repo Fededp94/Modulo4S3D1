@@ -50,3 +50,8 @@ WHERE AnnoDiNascita = 1982;
 SELECT COUNT(*) as NumeroFatture
 FROM Fatture
 WHERE Iva = 20;
+
+4:
+SELECT * FROM Prodotti
+WHERE EXTRACT(YEAR FROM DataAttivazione) = 2017
+  AND (Stato = 'In Produzione' OR Stato = 'In Commercio');
