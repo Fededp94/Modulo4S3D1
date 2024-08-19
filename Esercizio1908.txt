@@ -14,7 +14,39 @@ CREATE TABLE Prodotti (
 	InProduzione VARCHAR(20),
 	InCommercio VARCHAR(20),
 	DataAttivazione INT,
-	DataDisattivazione INT,
+	DataDisattivazione INT
 );
 
 Esercizio 3
+CREATE TABLE Fornitori (
+	NumeroFornitore INT PRIMARY KEY,
+	Denominazione VARCHAR (20),
+	RegioneResidenza VARCHAR (20)
+);
+
+Esercizio 4
+CREATE TABLE Fatture(
+	NumeroFattura INT PRIMARY KEY,
+	Tipologia VARCHAR(50),
+	Importo INT,
+	Iva INT,
+	IdCliente INT,
+	DataFattura INT,
+	NumeroFornitore INT
+);
+
+Queries:
+
+1:
+SELECT * FROM Clienti
+WHERE Nome = 'Mario';
+
+2:
+SELECT Nome, Cognome
+FROM Clienti
+WHERE AnnoDiNascita = 1982;
+
+3:
+SELECT COUNT(*) as NumeroFatture
+FROM Fatture
+WHERE Iva = 20;
