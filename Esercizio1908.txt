@@ -1,0 +1,20 @@
+Esercizio 1
+CREATE TABLE Clienti (
+    NumeroCliente INT PRIMARY KEY,
+    Nome VARCHAR(10),
+    Cognome VARCHAR(10),
+    AnnoDiNascita INT,
+    RagioneResidenza VARCHAR(20)
+);
+
+Esercizio 2
+CREATE TABLE Prodotti (
+    IdProdotto INT PRIMARY KEY,
+	Descrizione VARCHAR(200),
+	InProduzione VARCHAR(20),
+	InCommercio VARCHAR(20),
+	DataAttivazione INT,
+	DataDisattivazione INT,
+);
+
+Esercizio 3
